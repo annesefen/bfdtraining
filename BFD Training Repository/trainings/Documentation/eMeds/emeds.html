@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eMeds CHART Report</title>
+    <link rel="stylesheet" href="emeds.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>eMeds CHART Report</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="chart-section">
+            <div class="chart-card" id="chief-complaint">
+                <h2>C – Chief Complaint</h2>
+                <p>Include the main reason for the patient seeking assistance. May include direct quotes or a brief summary. Information may come from initial assessment or patient statements.</p>
+                <textarea placeholder="Document the chief complaint here..."></textarea>
+            </div>
+
+            <div class="chart-card" id="history">
+                <h2>H – History (Hx)</h2>
+                <p>Describe the history of the present illness or injury. Include pertinent negatives, past medical history, medications, and allergies. Record subjective information provided by the patient. Note the last oral intake and any associated or precipitating factors.</p>
+                <textarea placeholder="Document the history here..."></textarea>
+            </div>
+
+            <div class="chart-card" id="assessment">
+                <h2>A – Assessment (Ax)</h2>
+                <p>Document findings from the initial assessment. Include objective data such as LOC, vital signs, skin condition, and obvious injuries. Provide detailed results from a head-to-toe examination. Include pertinent negatives to confirm the absence of specific findings. Record any diagnostic test results and observations from the scene.</p>
+                <textarea placeholder="Document the assessment here..."></textarea>
+            </div>
+
+            <div class="chart-card" id="treatment">
+                <h2>R – Rx (Treatment)</h2>
+                <p>List all treatments provided to the patient in the order they were performed. Be specific about interventions, dosages, and application methods. Include the patient’s response to treatments.</p>
+                <textarea placeholder="Document the treatment here..."></textarea>
+            </div>
+
+            <div class="chart-card" id="transport">
+                <h2>T – Transport (Tx)</h2>
+                <p>Specify the destination hospital or facility. Note any events or treatments during transport. Record how the patient responded to treatment en route. For refusals, document that the patient was informed of risks, encouraged to seek care, and that refusal documentation was completed.</p>
+                <textarea placeholder="Document the transport details here..."></textarea>
+            </div>
+        </section>
+
+        <div class="action-buttons">
+            <button id="save-report">Save Report</button>
+            <button id="clear-report">Clear All</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 eMeds CHART Report. All rights reserved.</p>
+    </footer>
+
+    <script src="emeds.js"></script>
+</body>
+</html>

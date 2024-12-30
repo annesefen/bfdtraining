@@ -1,0 +1,259 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4CAF50, #3A8E3B);
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: #3A8E3B;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #2E7D32;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.course-content {
+    background: #fff;
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Interactive Materials */
+.interactive-materials {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.interactive-materials h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.interactive-materials p {
+    margin-bottom: 15px;
+}
+
+.interactive-materials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interactive-materials li {
+    margin-bottom: 10px;
+}
+
+.scenario-btn {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1rem;
+}
+
+.scenario-btn:hover {
+    background: #388E3C;
+    transform: translateY(-2px);
+}
+
+.scenario-btn:active {
+    background: #2E7D32;
+    transform: translateY(0);
+}
+
+/* Scenario Display */
+.scenario-display {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.scenario-display h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.scenario-display p {
+    margin-bottom: 15px;
+    white-space: pre-wrap; /* Preserves formatting for multiline text */
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Button */
+.info-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.info-btn:hover {
+    background: #388E3C;
+    transform: translateY(-2px);
+}
+
+.info-btn:active {
+    background: #2E7D32;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    text-align: left;
+    overflow-y: auto; /* Ensures scrolling if content overflows */
+    max-height: 90vh; /* Prevent modal from exceeding the viewport height */
+}
+
+.modal-content h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.modal-content h4 {
+    color: #388E3C;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-content ul {
+    padding-left: 20px;
+}
+
+.modal-content ul li {
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+    .course-content {
+        width: 95%;
+        padding: 15px;
+    }
+    .interactive-materials h3,
+    .scenario-display h3 {
+        font-size: 1.5rem;
+    }
+    .scenario-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

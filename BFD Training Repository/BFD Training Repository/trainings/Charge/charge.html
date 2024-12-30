@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charge Section - BFD eLearning</title>
+    <link rel="stylesheet" href="charge-styles.css">
+    <script defer src="charge-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BFD eLearning</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="radio-training.html">Radio Training</a></li>
+                <li><a href="medical-legal.html">Medical Legal Scenarios</a></li>
+                <li><a href="trauma-scenarios.html">Practical Trauma Scenarios</a></li>
+                <li><a href="medical-scenarios.html">Practical Medical Scenarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Charge Section -->
+<section id="charge-section" class="interactive-section">
+    <h2>Charge Section</h2>
+    <p>Prepare your unit and manage calls effectively as charge personnel. Follow these structured steps to ensure your unit is ready for service and your response is efficient.</p>
+
+    <!-- Preparing the Unit -->
+    <div class="content-block">
+        <h3 class="collapsible">Preparing the Unit for Service: Start-of-Shift Checklist</h3>
+        <div class="content">
+            <p>Use this interactive checklist to prepare your unit at the beginning of each shift:</p>
+            <ul id="start-checklist">
+                <li>
+                    <label>
+                        <input type="checkbox" id="radio-check" />
+                        <span>Check Radio Batteries</span>
+                    </label>
+                    <p class="tooltip hidden">Ensure the batteries are charged and secure the radio in its strap.</p>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="oxygen-check" />
+                        <span>Inspect Oxygen Supply</span>
+                    </label>
+                    <p class="tooltip hidden">Check the PSI level and replace or refill if necessary.</p>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="unit-check" />
+                        <span>Complete a Full Unit Checkout</span>
+                    </label>
+                    <p class="tooltip hidden">Inspect all equipment with your team but take personal responsibility for readiness.</p>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="mdc-login" />
+                        <span>Log Into the Mobile Data Computer (MDC)</span>
+                    </label>
+                    <p class="tooltip hidden">Sign in to place your unit in service and confirm dispatch availability.</p>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="epcr-login" />
+                        <span>Log Into the ePCR System</span>
+                    </label>
+                    <p class="tooltip hidden">Assign your crew and verify all entered information.</p>
+                </li>
+            </ul>
+            <button class="reset-btn" id="reset-checklist">Reset Checklist</button>
+        </div>
+    </div>
+
+    <!-- Handling Calls -->
+    <div class="content-block">
+        <h3 class="collapsible">Handling Calls as Charge Personnel</h3>
+        <div class="content">
+            <p>Master your responsibilities as charge personnel with this structured guide:</p>
+            <ol>
+                <li>
+                    <strong>Receive the Dispatch:</strong> 
+                    <span>Check the Mobile Data Computer (MDC) for details and accept the call to acknowledge it.</span>
+                </li>
+                <li>
+                    <strong>Prepare for Enroute Status:</strong> 
+                    <span>Update your MDC status to “Enroute” and switch the radio channel to 7A1 OPS1.</span>
+                </li>
+                <li>
+                    <strong>Brief the Crew:</strong>
+                    <span>Communicate key call details and equipment needs (e.g., stretcher, jump bag).</span>
+                </li>
+                <li>
+                    <strong>Navigate to the Scene:</strong>
+                    <span>Use GPS for route guidance and provide turn-by-turn directions to the driver.</span>
+                </li>
+                <li>
+                    <strong>Assist the Driver:</strong> 
+                    <span>Help with situational awareness (e.g., airhorn usage, hazard spotting).</span>
+                </li>
+                <li>
+                    <strong>Arrive on Scene:</strong> 
+                    <span>Update the MDC status to “On Scene” and ensure all necessary equipment is grabbed.</span>
+                </li>
+            </ol>
+            <button class="info-btn" id="more-handling-info">Learn More About Handling Calls</button>
+        </div>
+    </div>
+</section>
+
+
+        <section id="patient-interaction" class="interactive-section">
+    <h2>Patient Interaction Guide</h2>
+    <p>Effective patient interaction is crucial for ensuring safety, gathering accurate information, and providing compassionate care. Follow this structured guide to optimize every interaction.</p>
+    
+    <!-- Approach the Scene Safely -->
+    <div class="content-block">
+        <h3 class="collapsible">Approach the Scene Safely</h3>
+        <div class="content">
+            <p>Ensure safety by checking the scene for hazards and planning a clear path for patient transport:</p>
+            <ul>
+                <li><strong>Scene Safety:</strong> Observe surroundings for hazards such as animals, structural risks, or hostile individuals.</li>
+                <li><strong>Clear Path:</strong> Ensure the path to the patient is free of obstructions, making it safe for stretcher movement.</li>
+                <li><strong>Initial Observations:</strong> Look for clues outside the residence (e.g., broken windows, unusual smells) that may indicate dangers or provide context about the situation.</li>
+            </ul>
+            <button class="scenario-btn" id="scene-safety-sim">Practice Scene Safety Simulation</button>
+        </div>
+    </div>
+
+    <!-- Gather Patient Information -->
+    <div class="content-block">
+        <h3 class="collapsible">Gather Patient Information</h3>
+        <div class="content">
+            <p>Use the following structured tools to obtain thorough patient information:</p>
+
+            <!-- SAMPLE Assessment -->
+            <h4 class="subsection-title">SAMPLE Assessment</h4>
+            <ul>
+                <li><strong>S:</strong> Symptoms – What’s bothering you the most right now?</li>
+                <li><strong>A:</strong> Allergies – Do you have any allergies?</li>
+                <li><strong>M:</strong> Medications – What medications do you take?</li>
+                <li><strong>P:</strong> Past Medical History – Do you have any medical conditions?</li>
+                <li><strong>L:</strong> Last Oral Intake – When did you last eat or drink?</li>
+                <li><strong>E:</strong> Events Leading to the Incident – What were you doing when this started?</li>
+            </ul>
+            <button class="info-btn" id="sample-info-btn">Learn More About SAMPLE</button>
+
+            <!-- OPQRST Assessment -->
+            <h4 class="subsection-title">OPQRST Assessment</h4>
+            <ul>
+                <li><strong>O:</strong> Onset – What were you doing when the pain started?</li>
+                <li><strong>P:</strong> Provocation – What makes it better or worse?</li>
+                <li><strong>Q:</strong> Quality – What does the pain feel like (e.g., sharp, dull)?</li>
+                <li><strong>R:</strong> Radiation – Does the pain move to other areas?</li>
+                <li><strong>S:</strong> Severity – On a scale of 1–10, how bad is it?</li>
+                <li><strong>T:</strong> Time – Around what time did this pain begin?</li>
+            </ul>
+            <button class="info-btn" id="opqrst-info-btn">Learn More About OPQRST</button>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Managing Patient Care Inside the Ambulance -->
+        <section id="ambulance-care" class="interactive-section">
+    <h2>Managing Patient Care Inside the Ambulance</h2>
+    <p>Providing patient care during transport requires ongoing monitoring, clear communication, and efficient preparation for hospital arrival. Follow these steps to ensure a smooth and effective process.</p>
+
+    <!-- Monitoring and Reassessing the Patient -->
+    <div class="content-block">
+        <h3 class="collapsible">Monitor and Reassess the Patient</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Take Vital Signs:</strong> Use onboard equipment to monitor heart rate, blood pressure, respiratory rate, and SpO₂.</li>
+                <li><strong>Ask for Updates:</strong> Regularly ask the patient about their symptoms: "Are your symptoms changing?" or "How is your pain now?"</li>
+                <li><strong>Adjust Treatment:</strong> Modify oxygen delivery, medication, or patient positioning based on their condition.</li>
+            </ul>
+            <button class="scenario-btn" id="monitoring-sim">Practice Monitoring and Reassessing</button>
+        </div>
+    </div>
+
+    <!-- Documentation and Communication -->
+    <div class="content-block">
+        <h3 class="collapsible">Document and Communicate</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Fill Out the ePCR:</strong> Start documenting patient demographics, clinical impressions, and interventions provided during transport.</li>
+                <li><strong>Notify the Hospital:</strong> Use EMRC or the designated radio channel to give the hospital an accurate patient report:
+                    <ul>
+                        <li>Priority level (1–4).</li>
+                        <li>Chief complaint and clinical impression.</li>
+                        <li>Vital signs and treatment details.</li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="info-btn" id="emrc-details-btn">Learn More About EMRC Communication</button>
+        </div>
+    </div>
+
+    <!-- Preparing for Arrival -->
+    <div class="content-block">
+        <h3 class="collapsible">Prepare for Arrival</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Organize Equipment:</strong> Ensure all necessary items (e.g., jump bag, medication list) are ready for the handoff.</li>
+                <li><strong>Update the ePCR:</strong> Finalize as much of the report as possible before arriving at the hospital.</li>
+                <li><strong>Communicate with the Patient:</strong> Reassure them about what will happen next: "When we arrive, the doctors will continue your care."</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="hospital-care" class="interactive-section">
+    <h2>Managing the Patient at the Hospital</h2>
+    <p>Ensuring a smooth transition of care at the hospital is essential for patient outcomes and operational efficiency. Follow these guidelines to complete the process effectively.</p>
+
+    <!-- Check the Patient In -->
+    <div class="content-block">
+        <h3 class="collapsible">Check the Patient In</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Escort the Patient:</strong> Safely bring the patient into the emergency department on the stretcher.</li>
+                <li><strong>Provide Identification:</strong> Share the patient's name, ID, and chief complaint with the hospital's check-in staff.</li>
+                <li><strong>Vital Signs:</strong> Update the patient's vital signs using hospital equipment and share any significant changes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Report to the Charge Nurse -->
+    <div class="content-block">
+        <h3 class="collapsible">Report to the Charge Nurse</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Summarize the Case:</strong> Provide the charge nurse with a concise report, including:
+                    <ul>
+                        <li>Age, sex, and chief complaint.</li>
+                        <li>Vital signs and medical history.</li>
+                        <li>Interventions provided and patient response.</li>
+                    </ul>
+                </li>
+                <li><strong>Answer Questions:</strong> Be prepared to clarify any details about the patient's condition or care.</li>
+            </ul>
+            <button class="info-btn" id="handoff-practice-btn">Practice Handoff Reporting</button>
+        </div>
+    </div>
+
+    <!-- Finalize Transfer of Care -->
+    <div class="content-block">
+        <h3 class="collapsible">Finalize Transfer of Care</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Obtain Signatures:</strong> Have the charge nurse and patient (if applicable) sign the ePCR to confirm transfer of care.</li>
+                <li><strong>Finalize the ePCR:</strong> Complete any remaining sections of the report, ensuring accuracy and completeness.</li>
+                <li><strong>Restock and Sanitize:</strong> Replenish supplies and clean the stretcher and ambulance interior before returning to service.</li>
+            </ul>
+            <button class="reset-btn" id="restock-checklist-btn">Reset Unit for Next Call</button>
+        </div>
+    </div>
+</section>
+<section id="end-shift-checklist" class="interactive-section">
+    <h2>End-of-Shift Checklist</h2>
+    <p>After your shift, ensure your unit is restocked, cleaned, and fully operational for the next crew. Follow these steps:</p>
+    <div class="content-block">
+        <h3 class="collapsible">Steps to Complete Before End of Shift</h3>
+        <div class="content">
+            <ul>
+                <li><input type="checkbox" id="clean-unit" /> Clean the stretcher and ambulance interior.</li>
+                <li><input type="checkbox" id="restock-equipment" /> Restock supplies (e.g., oxygen masks, gloves, medications).</li>
+                <li><input type="checkbox" id="finalize-epcr" /> Finalize and submit all ePCRs from the shift.</li>
+                <li><input type="checkbox" id="check-radio" /> Ensure radios and other electronic equipment are charging.</li>
+                <li><input type="checkbox" id="log-off-mdc" /> Log out of the Mobile Data Computer (MDC).</li>
+            </ul>
+            <button class="reset-btn" id="reset-end-shift">Reset Checklist</button>
+        </div>
+    </div>
+</section>
+		<section id="advanced-communication" class="interactive-section">
+    <h2>Advanced Communication Techniques</h2>
+    <p>Clear and concise communication with your crew and other stakeholders ensures patient safety and operational efficiency. Practice key techniques here.</p>
+
+    <!-- Radio Etiquette -->
+    <div class="content-block">
+        <h3 class="collapsible">Radio Communication Etiquette</h3>
+        <div class="content">
+            <ul>
+                <li>Use standard codes and protocols for clarity (e.g., "10-4" or "Copy that").</li>
+                <li>Keep messages brief and to the point: "A706 to Montgomery, we are en route to [location]."</li>
+                <li>Pause between messages to allow others to communicate.</li>
+            </ul>
+            <button class="info-btn" id="radio-practice-btn">Practice Radio Calls</button>
+        </div>
+    </div>
+
+    <!-- Team Coordination -->
+    <div class="content-block">
+        <h3 class="collapsible">Crew Coordination During Emergencies</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Delegate Roles:</strong> Assign tasks based on each crew member's strengths and training.</li>
+                <li><strong>Conduct Quick Briefings:</strong> Share information on the patient's condition, location, and equipment needed.</li>
+                <li><strong>Use Non-Verbal Cues:</strong> Hand signals and eye contact can improve efficiency in noisy environments.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="exceptional-situations" class="interactive-section">
+    <h2>Exceptional Situations</h2>
+    <p>Some emergencies require exceptional decisions or actions beyond routine protocols. Learn how to handle these scenarios:</p>
+
+    <!-- Mass Casualty Incidents -->
+    <div class="content-block">
+        <h3 class="collapsible">Mass Casualty Incidents (MCI)</h3>
+        <div class="content">
+            <ul>
+                <li><strong>Communication:</strong> Coordinate with EMRC to prioritize patient care and allocate resources effectively.</li>
+                <li><strong>Patient Triage:</strong> Use START (Simple Triage and Rapid Treatment) to classify patients by severity:
+                    <ul>
+                        <li>Green: Minor injuries.</li>
+                        <li>Yellow: Non-life-threatening injuries.</li>
+                        <li>Red: Immediate life-saving interventions required.</li>
+                        <li>Black: Deceased or non-salvageable.</li>
+                    </ul>
+                </li>
+                <li><strong>Documentation:</strong> Record triage tags and communicate updates with dispatch and the hospital.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Exceptional Calls -->
+    <div class="content-block">
+        <h3 class="collapsible">Exceptional Calls</h3>
+        <div class="content">
+            <p>When unable to consult with EMRC or follow standard protocols:</p>
+            <ul>
+                <li>Document the situation as an "Exceptional Call" in the ePCR.</li>
+                <li>Follow standing orders and protocols as closely as possible while improvising solutions.</li>
+                <li>Provide a detailed report to supervisors post-call for review.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+		
+<section id="performance-metrics" class="interactive-section">
+    <h2>Key Metrics for Performance Improvement</h2>
+    <p>Tracking metrics helps identify areas for improvement and ensures high standards of care.</p>
+
+    <div class="content-block">
+        <h3 class="collapsible">Personal Metrics</h3>
+        <div class="content">
+            <ul>
+                <li>Average time from dispatch to arrival on scene.</li>
+                <li>Accuracy and completeness of ePCR documentation.</li>
+                <li>Patient satisfaction feedback (if available).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <h3 class="collapsible">Crew Metrics</h3>
+        <div class="content">
+            <ul>
+                <li>Response times compared to local benchmarks.</li>
+                <li>Team coordination during high-stress calls.</li>
+                <li>Equipment readiness at the start and end of shifts.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bethesda Fire Department. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
